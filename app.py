@@ -15,50 +15,50 @@ except Exception:
     Credentials = None
 
 OWNER_SECRET = "gT9sccN6Z#KjHEdaOv1ZapaXV2dG1cpq"
-GOOGLE_SHEETS_ID = "1HELDHCGfPB-0MNg7auDezKdhITszY0lIvFvrVVY8PS0"
+GOOGLE_SHEETS_ID = "1Yn0yG4I40DBRUO3QLP3yIsYQXkStQxCXOmtTM2r0s6E"
 WORKSHEET_NAME = "APP_CONFIG"
 ANALYSER_CONFIG_PATH = Path(__file__).parent.parent / "EduPulse-Analyzer" / "app_config.json"
 
 SERVICE_ACCOUNT_INFO = {
     "type": "service_account",
-    "project_id": "edupulse-auth-494716",
-    "private_key_id": "16039b097171f18761fd02cd0812feb3036b9ec1",
+    "project_id": "edupulse-auth-494619",
+    "private_key_id": "5d0e30a7bea7bbd9a284726105968316098878d9",
     "private_key": (
         "-----BEGIN PRIVATE KEY-----\n"
-        "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC7Zb9JUZcw2DGI\n"
-        "7MMY/RhRgEaKL19rIsol6fEXWfH0oWm1MazJO0T08a8PcKF9FHaf0EcelLHtfbB6\n"
-        "yDfhF99JQ3ARwmNoi6pCai+8m/tsBNtP0jhzQFRxJW6utDfA9aM0LuEEzH7Z6yLe\n"
-        "yQntNCchrsdBYWQW/kXrXBIiKLuKAY9DK7m93DX0IDomIIAWMmAshLV/m9oDvnAl\n"
-        "h1zi5zG5Yud+21DxENkAN9uzplOFqwE1+Vp7z/w3vKNdXqdBLYRK8rHVLKHP0SEo\n"
-        "TJb2JMTF8BcPsi0LDwq24vA8/BBb9s0+ZVG4nrj81giD9TOrNksBfMgz+x9NHxE8\n"
-        "Ldy2/XV5AgMBAAECggEAC7NLPZTNbbBr7FaLCmAAEROjI9zYFnB8QmCAS/LS2XEs\n"
-        "EFL/DKvpjukZoutHe++nhewrSpiiYNeGia3/ViunRnPiVwuF6SjCO0YVv68WBD0r\n"
-        "48iWe3SuaQebKOeJ7R9xHpCYPlRVzb2hhlszRlcJo+/dk0KVTR24aBzuKWmVZwT9\n"
-        "OWPTpfxczhfKL7cwIO94OCOY+hs99NLnXHx5oeii+20xicMDF6f78b5Z+dtFCz01\n"
-        "xk+iZLvXwBFcFGvsIe/JGKlTdAdjgvTjsnBWRNtljNf6F3GS7/S0TNJx0nseF64U\n"
-        "RAy6IfRrl/jPL9FRyW15+SiCbf/eVHaaQTaL3stzQQKBgQDs4oPwHPXMo++9mE1F\n"
-        "rRLqQSzUkCxgfI74mXUygHE6WrQ4+aDpP3+RRVcL8OT0Lyibc7ESidUqCCcsbwXA\n"
-        "pTRpqTfa6+WvfA9vE8G3dSU0VCaKTeWzkmVX/ofWCXcfxaibWPm1Eqza6YSnB1No\n"
-        "CPodl0f+RHO7v1J1fTAFxG/FQQKBgQDKhPBTt4AQRfJUD0yeMt/nDsXxdG5CNd69\n"
-        "xe+zmbHmkVbudm3JRghU0JuubNVKEOJiSQx7QVF+yYNj6PF5E/1bMzmXwVEsUS6d\n"
-        "tAlyz98/mRlAV15i/mPoodVhaxI51m369THK0vCe+sabK3jFYquTuG07FI4qB6kb\n"
-        "GsavZOYKOQKBgHOZfuV4XINHJUGSx3LPKUHkGGqLCPz1DBhJWyYQBDGD/hsnxtzM\n"
-        "vgY4nmgXYMPBF8H0zV7MoJfobqWCcH44oMFHcRiGsgnXMvjz3T8YDdXhkwU/Sm89\n"
-        "a/NrJQLQj6+Tl9pnq0QwHuaduryAGLXWW6iBIQL2iLwAe88WDo9h82GBAoGBAIAm\n"
-        "1Wk0Yh5qFKkqsUIeUV8GEy3yjl7pddTCrycIZ/HOIKNvX5OQ9G6vPwSGLAXdX1Pw\n"
-        "g6xvLeG8JJ+RZVRH2PfgF163XuVbTdNPfPchIVU+TSNQ5hJghdpMphkqRvNAhIHc\n"
-        "rLB7APapHApO3PKSuJ4Wg1Bydm+UP2c+b2HHyGXJAoGBAIbW6SuUok0IJdQuLJCz\n"
-        "L2sbQC6/N+CEA41K5UEh9pTpNmF0cH1bYDWniM9RUyVxL6/LP71HgpQDCEmoH1Nt\n"
-        "QRw5H2GLJOH5Yz0n+AuHdUHbaUasTOH5HM+6LIMVz2Tb1QC4ItZmv8wpRMhaWp7N\n"
-        "ukSRUBC/yMaqz7jrcqU1+gfd\n"
+        "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC14OkazWIY0y50\n"
+        "+jydu9UzvB1IL29D2u/Uym9jV7i/n/NVCVy6hmr4osge/xQiDZhWBOx4gpaY+a2d\n"
+        "kqPb6oXGwnShpU/MrVkcbQOdYknBju6kBU007a/I7a5SiIL2zUlsvmIHdN15acH/\n"
+        "V7BqU2zdAKzmJcc66R5PvTg+DIK18oo0sEM00h4sjr39dfeMCwTft3HX+F/0IUxT\n"
+        "SIonVytUtDMODsTySMSuFiD+1T+1LchGkYw0ZBg9daWni0+LTcqY60FTu7/3c21o\n"
+        "8rc4wpKAyYF2sKhfVqCRqfYajIBxrraFxyQkDKpp29xun7CZQXNYLVFe+jkj6qQF\n"
+        "L1E41H5BAgMBAAECggEAIdcT0CCUJrXOQEYZ9qgu6kYPNbHbtCaddnxm3rdA4OiQ\n"
+        "FAuepPbjGtlgvkGsG4zngeO/Isn7XsGf38BbvAyF8P4XyMazEwxS1vLimAskWX7w\n"
+        "YHS7EYTC7vHoPCN5qJV4GqNOpoAEQDWg+pM0eAgHKpSYVucDC2857FCy0PqvbE5A\n"
+        "qM7wrlEpqlE7dC2sb+rWXJ1ky3SRWHt4gdj5H4NjHeg+b5JUP1viXx+3Pph5U8vz\n"
+        "jRGgX8AdQDsgL55ETp5PtVIl5P2gqLRz2+R6wkQES+9c5TKr3wLjvg1sp7nwcUwz\n"
+        "l9AZB3wDYuZuTUpCFpuH4fi3ps3Re0vR8W4bXg/SdQKBgQDjOcIibWslst9dGBkf\n"
+        "9NfjSHytAVrmexksuCKxnbXk2qXyYndxI1jYj4GcVVL2fUPL8zWDeM3hYVn80yWL\n"
+        "2m0HCVymPU/bcghkP7+4dShzF6BuYJdTi+e/xkN4ddK/bFA/8lRPkosExcqM9Tko\n"
+        "2PSRFLO8mU3tRgm4YkW/fvDIPQKBgQDM6RU4Qs4cbGB10u6j6+1dyFcrwYDAzimY\n"
+        "DJy+JzqsUcqaAVI/zVFfkpEhYOaNK+Y9yR5P198mD/NyUAzQGIOgRY9o2bSOZosm\n"
+        "i7lQXS+N0454a2nT2TTSyDH5avUna9bmTsLxYaTF+AHFN2n51QTuXeTsN+4joOz2\n"
+        "AJlCcqgqVQKBgFw8duSYu/TKnkbg4FoLfpMhOpLTyP1kHLz9Zf/pgAuNAe3ZMJj5\n"
+        "ezg1UKyQKiQqhxnD+QYMRK5nYSry3vvdR4Kitzw4CTGQIX3oLsAGtsu5XINRrDva\n"
+        "v9El/v9n/It9wTmj+btvRgVC8My1QmWlY+l8mNVG+c4GLy3snll0gvMVAoGBAI/f\n"
+        "S93f0hXU5nlz68i+e0AwzTvUtpEpb7zphhhhNOoO16EAMn7Hq03ee/Yisl4Gp7dU\n"
+        "Aetvl6eC5ZyqpgRqYejjTkkBKqwdRbB/xFKvyxbapprYWEq9pEAm/iewuIbASfgU\n"
+        "7v1KYMX7V0rgmJEoxziSRoywzIzJjfc//lvQY1CtAoGAZiHA3n1OU/zvsTSJRps8\n"
+        "P/foHMnDuVxpcpZoeaWw0ApDGo9ixpoonB6/R4DKTdZ3HVeZE4QZA/+b0QF+8Tph\n"
+        "5L5TYMNOM0iWg3vtqLC4lnhSEVax3EGYRcd7hqXloecHFz21nGsd1xoSqWAkOoYA\n"
+        "zR8aVF5sf6Fj15Ka76wNUJ0=\n"
         "-----END PRIVATE KEY-----\n"
     ),
-    "client_email": "edupulse-robot@edupulse-auth-494716.iam.gserviceaccount.com",
-    "client_id": "104247551963153323152",
+    "client_email": "edupulse-robot@edupulse-auth-494619.iam.gserviceaccount.com",
+    "client_id": "103082176599383008136",
     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
     "token_uri": "https://oauth2.googleapis.com/token",
     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/edupulse-robot%40edupulse-auth-494716.iam.gserviceaccount.com",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/edupulse-robot%40edupulse-auth-494619.iam.gserviceaccount.com",
     "universe_domain": "googleapis.com",
 }
 
