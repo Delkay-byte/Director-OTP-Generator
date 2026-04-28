@@ -160,23 +160,34 @@ if st.button("Generate New Director OTP", type="primary"):
     else:
         new_key = generate_director_key()
         now_text = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
-        errors = []
-        try:
-            write_otp_to_sheet(new_key, now_text)
-        except Exception as exc:
-            errors.append(f"Google Sheets: {exc}")
+        sheet_ok = False
+        local_ok = False
+        sheet_err = ""
+        local_err = ""
+
+        with st.spinner("Connecting to Google Sheets..."):
+            try:
+                write_otp_to_sheet(new_key, now_text)
+                sheet_ok = True
+            except Exception as exc:
+                sheet_err = str(exc)
+
         try:
             write_otp_to_local_config(new_key, now_text)
+            local_ok = True
         except Exception as exc:
-            errors.append(f"Local config: {exc}")
-        if not errors:
-            st.success(f"OTP generated and saved everywhere: `{new_key}`")
-        elif len(errors) == 1:
-            st.warning(f"OTP saved with one warning — {errors[0]}")
-            st.success(f"Active OTP: `{new_key}`")
+            local_err = str(exc)
+
+        if sheet_ok:
+            st.success(f"✅ OTP written to Google Sheets: `{new_key}`")
         else:
-            st.error("Failed to save OTP to both destinations:")
-            for e in errors:
-                st.code(e)
-        if errors == [] or len(errors) < 2:
+            st.error(f"❌ Google Sheets write failed:")
+            st.code(sheet_err)
+
+        if local_ok:
+            st.success("✅ OTP written to local app_config.json")
+        else:
+            st.warning(f"⚠️ Local config write skipped/failed: {local_err}")
+
+        if sheet_ok:
             st.rerun()
