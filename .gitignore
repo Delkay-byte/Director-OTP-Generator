@@ -1,0 +1,21 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# VS Code settings
+.vscode/
+
+# Local data / Temp files
+*.log
+.DS_Store
+
+# Streamlit secrets (never commit credentials)
+.streamlit/secrets.toml
